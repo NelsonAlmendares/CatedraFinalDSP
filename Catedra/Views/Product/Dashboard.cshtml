@@ -1,0 +1,131 @@
+﻿@model IEnumerable<Catedra.Models.ProductModelo>
+
+@{
+    ViewData["Title"] = "Dashboard";
+}
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>
+    .card_custom {
+        background: #FBF9F8;
+        border: 1px solid #DAD9D7;
+        border-radius: 5px;
+        padding: 14px;
+        margin-top: 1rem;
+    }
+    .bordered-img {
+        padding: 1rem;
+        border-radius: 20px;
+    }
+</style>
+
+<div>
+    <h4>Bienvenido</h4>
+    <hr />    
+    <div class="row">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="~/images/Designer (1).jpeg" class="d-block w-100 bordered-img" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Contamos con los mejores ingresos todas las semanas.</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="~/images/Designer (2).jpeg" class="d-block w-100 bordered-img" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Viaja a mundos nuevos con nosotros</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="~/images/Designer.jpeg" class="d-block w-100 bordered-img" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Encuentra tu espacio de lectura</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-8">
+            <div class="card_custom">
+                <!-- Primer gráfico: Unidades de Productos -->
+                <canvas class="grafico" id="graficoProductos" width="400" height="200"></canvas>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card_custom">               
+
+                <div class="card-body">
+                    <h5 class="text-center">Títulos agregados recientemente</h5>
+                    <hr />
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="text-center">Título</th>
+                                <th scope="col" class="text-center">Editorial</th>                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>                                    
+                                    <td scope="row" class="text-center">@item.Title</td>
+                                    <td scope="row" class="text-center">@item.IdEditorial</td>                                    
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    // Obtener los datos del gráfico desde ViewBag (en formato JSON) || CHART 1
+    var dataProductos = JSON.parse('@Html.Raw(ViewBag.DataProductos)');
+    console.log(dataProductos);  // Verificar los datos en la consola
+
+    // Primer gráfico: Unidades de Productos
+    var etiquetasProductos = dataProductos.map(x => x.titulo); // Usar 'Title' para etiquetas
+    var datosProductos = dataProductos.map(x => x.unidades || 0); // Usar 'Cantidad' para datos
+
+    var ctx1 = document.getElementById('graficoProductos').getContext('2d');
+    var graficoProductos = new Chart(ctx1, {
+        type: 'bar', // Cambia el tipo de gráfico a 'bar' si quieres un gráfico de barras
+        data: {
+            labels: etiquetasProductos,
+            datasets: [{
+                label: 'Unidades Ingresadas por Fecha',
+                data: datosProductos,
+                backgroundColor: 'rgba(54, 162, 235, 0.8)',
+                borderColor: 'rgba(54, 162, 235, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+</script>

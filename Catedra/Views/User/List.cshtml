@@ -1,0 +1,75 @@
+﻿@model IEnumerable<Catedra.Models.UsuariosModelo>
+
+@{
+    ViewData["Title"] = "List";
+}
+
+<style>
+    .pagination {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+</style>
+<h1 class="mt-4 mb-3">Administración de Usuarios: </h1>
+
+<div class="card">
+
+    <div class="card-body">
+        <a asp-action="SaveData" asp-controller="User" class="btn btn-outline-success">Agregar Usuario</a>
+        <hr />
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col" class="text-center">ID</th>
+                    <th scope="col" class="text-center">Nombre</th>
+                    <th scope="col" class="text-center">Apellidos</th>
+                    <th scope="col" class="text-center">Correo</th>
+                    <th scope="col" class="text-center">Usuario</th>                    
+                    <th scope="col" class="text-center">Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td scope="row" class="text-center">@item.Id</td>
+                        <td scope="row" class="text-center">@item.UserName</td>
+                        <td scope="row" class="text-center">@item.UserLastName</td>
+                        <td scope="row" class="text-center">@item.UserEmail</td>
+                        <td scope="row" class="text-center">@item.User</td>                        
+
+                        <td scope="row" class="text-center">
+                            <a asp-action="UpdateData" asp-controller="Product" class="btn btn-outline-info" asp-route-IdProduct="@item.Id"><box-icon name='pencil'></box-icon></a>
+                            <a asp-action="Delete" asp-controller="Product" class="btn btn-outline-danger" asp-route-IdProduct="@item.Id"><box-icon name='trash'></box-icon></a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="container">
+    <div class="pagination">
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>

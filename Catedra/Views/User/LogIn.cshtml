@@ -1,0 +1,84 @@
+﻿@model Catedra.Models.UsuariosModelo
+
+@{
+    ViewData["Title"] = "LogIn";
+}
+
+<style>
+    .session {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Full viewport height */        
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .row-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%; /* Ensure it takes the full width */
+    }
+    .col-md-4 {
+        border-left: 0;
+        padding-left: 0;
+    }
+    .col-md-4 img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 20px 0 0 20px;
+    }
+    .session_square {
+        background: #f3f2f2;
+        border-radius: 20px;
+        border-left: 0;
+        padding-left: 0;
+    }
+</style>
+
+<div class="session">
+    <div class="container session_square">
+        <div class="row row-container">
+            <div class="col-md-4">
+                <img src="~/images/login.png" class="img-fluid w-100" alt="Alternate Text" />
+            </div>
+            <div class="col-md-8">
+                <!-- Form posts to the LogIn action -->
+                <form asp-action="LogIn" method="post">
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Username</label>
+                        <!-- Bind the input to the user parameter -->
+                        <input type="text" class="form-control" id="username" name="user" value="@Model.User">
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <!-- Bind the input to the pwd parameter -->
+                        <input type="password" class="form-control" id="password" name="pwd" value="@Model.UserPWD">
+                    </div>
+                    <!-- Optional: Add validation error display -->
+                    @if (!ViewData.ModelState.IsValid)
+                    {
+                        <div class="text-danger">
+                            @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                            {
+                                <p>@error.ErrorMessage</p>
+                            }
+                        </div>
+                    }
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+

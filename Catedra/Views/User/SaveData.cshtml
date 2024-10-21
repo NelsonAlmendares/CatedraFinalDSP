@@ -1,0 +1,72 @@
+﻿@model Catedra.Models.UsuariosModelo
+
+@{
+    ViewData["Title"] = "SaveData";
+}
+
+<style>
+    .contenido {
+        width: 700px;
+    }
+
+    .centering-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+
+<h1>Agregar Usuarios</h1>
+
+<hr />
+
+<div class="card">
+    <div class="card-header">
+        Gestión de Usuarios
+    </div>
+
+    <div class="centering-content" style="background: #F0F0F0;">
+        <div class="contenido">
+            <form asp-action="SaveData">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group m-3">
+                    <label for="exampleFormControlInput1" class="form-label">Nombre del Usuario: </label>
+                    <input asp-for="UserName" class="form-control" />
+                    <span asp-validation-for="UserName" class="text-danger"></span>
+                </div>
+                <div class="form-group m-3">
+                    <label for="exampleFormControlInput1" class="form-label">Apellido del Usuario: </label>
+                    <input asp-for="UserLastName" class="form-control" />
+                    <span asp-validation-for="UserLastName" class="text-danger"></span>
+                </div>
+                <div class="form-group m-3">
+                    <label for="exampleFormControlInput1" class="form-label">Correo del Usuario: </label>
+                    <input asp-for="UserEmail" class="form-control" />
+                    <span asp-validation-for="UserEmail" class="text-danger"></span>
+                </div>
+                <div class="form-group m-3">
+                    <label for="exampleFormControlInput1" class="form-label">Telefono del Usuario: </label>
+                    <input asp-for="UserPhone" class="form-control" />
+                    <span asp-validation-for="UserPhone" class="text-danger"></span>
+                </div>
+                <div class="form-group m-3">
+                    <label for="exampleFormControlInput1" class="form-label">Usuario: </label>
+                    <input asp-for="User" class="form-control" />
+                    <span asp-validation-for="User" class="text-danger"></span>
+                </div>
+                <div class="form-group m-3">
+                    <label for="exampleFormControlInput1" class="form-label">Password del Usuario: </label>
+                    <input asp-for="UserPWD" class="form-control" />
+                    <span asp-validation-for="UserPWD" class="text-danger"></span>
+                </div>
+                <div class="form-group mt-3 mb-3 text-center">
+                    <input type="submit" value="Create" class="btn btn-outline-success" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="text-center">
+    <a asp-action="List" class="btn btn-outline-info mt-3 mb-3">Back to List</a>
+</div>

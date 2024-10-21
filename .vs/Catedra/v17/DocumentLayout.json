@@ -1,0 +1,179 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\nelso\\OneDrive\\Escritorio\\Universidad Don Bosco\\DSP\\Fase 1\\Catedra\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4EE4ED98-7055-4324-94E7-EDB578E6C5D7}|Catedra\\Catedra.csproj|c:\\users\\nelso\\onedrive\\escritorio\\universidad don bosco\\dsp\\fase 1\\catedra\\catedra\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EE4ED98-7055-4324-94E7-EDB578E6C5D7}|Catedra\\Catedra.csproj|solutionrelative:catedra\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EE4ED98-7055-4324-94E7-EDB578E6C5D7}|Catedra\\Catedra.csproj|c:\\users\\nelso\\onedrive\\escritorio\\universidad don bosco\\dsp\\fase 1\\catedra\\catedra\\data\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EE4ED98-7055-4324-94E7-EDB578E6C5D7}|Catedra\\Catedra.csproj|solutionrelative:catedra\\data\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EE4ED98-7055-4324-94E7-EDB578E6C5D7}|Catedra\\Catedra.csproj|c:\\users\\nelso\\onedrive\\escritorio\\universidad don bosco\\dsp\\fase 1\\catedra\\catedra\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4EE4ED98-7055-4324-94E7-EDB578E6C5D7}|Catedra\\Catedra.csproj|solutionrelative:catedra\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EE4ED98-7055-4324-94E7-EDB578E6C5D7}|Catedra\\Catedra.csproj|c:\\users\\nelso\\onedrive\\escritorio\\universidad don bosco\\dsp\\fase 1\\catedra\\catedra\\views\\user\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4EE4ED98-7055-4324-94E7-EDB578E6C5D7}|Catedra\\Catedra.csproj|solutionrelative:catedra\\views\\user\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EE4ED98-7055-4324-94E7-EDB578E6C5D7}|Catedra\\Catedra.csproj|c:\\users\\nelso\\onedrive\\escritorio\\universidad don bosco\\dsp\\fase 1\\catedra\\catedra\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EE4ED98-7055-4324-94E7-EDB578E6C5D7}|Catedra\\Catedra.csproj|solutionrelative:catedra\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EE4ED98-7055-4324-94E7-EDB578E6C5D7}|Catedra\\Catedra.csproj|c:\\users\\nelso\\onedrive\\escritorio\\universidad don bosco\\dsp\\fase 1\\catedra\\catedra\\data\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EE4ED98-7055-4324-94E7-EDB578E6C5D7}|Catedra\\Catedra.csproj|solutionrelative:catedra\\data\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EE4ED98-7055-4324-94E7-EDB578E6C5D7}|Catedra\\Catedra.csproj|c:\\users\\nelso\\onedrive\\escritorio\\universidad don bosco\\dsp\\fase 1\\catedra\\catedra\\views\\product\\savedata.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4EE4ED98-7055-4324-94E7-EDB578E6C5D7}|Catedra\\Catedra.csproj|solutionrelative:catedra\\views\\product\\savedata.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EE4ED98-7055-4324-94E7-EDB578E6C5D7}|Catedra\\Catedra.csproj|c:\\users\\nelso\\onedrive\\escritorio\\universidad don bosco\\dsp\\fase 1\\catedra\\catedra\\views\\user\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4EE4ED98-7055-4324-94E7-EDB578E6C5D7}|Catedra\\Catedra.csproj|solutionrelative:catedra\\views\\user\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EE4ED98-7055-4324-94E7-EDB578E6C5D7}|Catedra\\Catedra.csproj|c:\\users\\nelso\\onedrive\\escritorio\\universidad don bosco\\dsp\\fase 1\\catedra\\catedra\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4EE4ED98-7055-4324-94E7-EDB578E6C5D7}|Catedra\\Catedra.csproj|solutionrelative:catedra\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 168,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SaveData.cshtml",
+              "DocumentMoniker": "C:\\Users\\nelso\\OneDrive\\Escritorio\\Universidad Don Bosco\\DSP\\Fase 1\\Catedra\\Catedra\\Views\\Product\\SaveData.cshtml",
+              "RelativeDocumentMoniker": "Catedra\\Views\\Product\\SaveData.cshtml",
+              "ToolTip": "C:\\Users\\nelso\\OneDrive\\Escritorio\\Universidad Don Bosco\\DSP\\Fase 1\\Catedra\\Catedra\\Views\\Product\\SaveData.cshtml",
+              "RelativeToolTip": "Catedra\\Views\\Product\\SaveData.cshtml",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAuwCIAAABQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-20T15:45:34.85Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "List.cshtml",
+              "DocumentMoniker": "C:\\Users\\nelso\\OneDrive\\Escritorio\\Universidad Don Bosco\\DSP\\Fase 1\\Catedra\\Catedra\\Views\\User\\List.cshtml",
+              "RelativeDocumentMoniker": "Catedra\\Views\\User\\List.cshtml",
+              "ToolTip": "C:\\Users\\nelso\\OneDrive\\Escritorio\\Universidad Don Bosco\\DSP\\Fase 1\\Catedra\\Catedra\\Views\\User\\List.cshtml",
+              "RelativeToolTip": "Catedra\\Views\\User\\List.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-14T04:13:53.886Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Producto.cs",
+              "DocumentMoniker": "C:\\Users\\nelso\\OneDrive\\Escritorio\\Universidad Don Bosco\\DSP\\Fase 1\\Catedra\\Catedra\\Data\\Producto.cs",
+              "RelativeDocumentMoniker": "Catedra\\Data\\Producto.cs",
+              "ToolTip": "C:\\Users\\nelso\\OneDrive\\Escritorio\\Universidad Don Bosco\\DSP\\Fase 1\\Catedra\\Catedra\\Data\\Producto.cs",
+              "RelativeToolTip": "Catedra\\Data\\Producto.cs",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAYwKkAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T17:21:57.345Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\nelso\\OneDrive\\Escritorio\\Universidad Don Bosco\\DSP\\Fase 1\\Catedra\\Catedra\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Catedra\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\nelso\\OneDrive\\Escritorio\\Universidad Don Bosco\\DSP\\Fase 1\\Catedra\\Catedra\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "Catedra\\Controllers\\ProductController.cs",
+              "ViewState": "AQIAAEcAAAAAAAAAAAAswF8AAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T17:07:25.796Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 334,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\nelso\\OneDrive\\Escritorio\\Universidad Don Bosco\\DSP\\Fase 1\\Catedra\\Catedra\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Catedra\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\nelso\\OneDrive\\Escritorio\\Universidad Don Bosco\\DSP\\Fase 1\\Catedra\\Catedra\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Catedra\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACoAAABaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-21T04:25:38.022Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LogIn.cshtml",
+              "DocumentMoniker": "C:\\Users\\nelso\\OneDrive\\Escritorio\\Universidad Don Bosco\\DSP\\Fase 1\\Catedra\\Catedra\\Views\\User\\LogIn.cshtml",
+              "RelativeDocumentMoniker": "Catedra\\Views\\User\\LogIn.cshtml",
+              "ToolTip": "C:\\Users\\nelso\\OneDrive\\Escritorio\\Universidad Don Bosco\\DSP\\Fase 1\\Catedra\\Catedra\\Views\\User\\LogIn.cshtml",
+              "RelativeToolTip": "Catedra\\Views\\User\\LogIn.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACcAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-20T17:40:51.953Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\nelso\\OneDrive\\Escritorio\\Universidad Don Bosco\\DSP\\Fase 1\\Catedra\\Catedra\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Catedra\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\nelso\\OneDrive\\Escritorio\\Universidad Don Bosco\\DSP\\Fase 1\\Catedra\\Catedra\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Catedra\\Controllers\\UserController.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAcwBgAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T17:03:51.206Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\nelso\\OneDrive\\Escritorio\\Universidad Don Bosco\\DSP\\Fase 1\\Catedra\\Catedra\\Data\\Usuario.cs",
+              "RelativeDocumentMoniker": "Catedra\\Data\\Usuario.cs",
+              "ToolTip": "C:\\Users\\nelso\\OneDrive\\Escritorio\\Universidad Don Bosco\\DSP\\Fase 1\\Catedra\\Catedra\\Data\\Usuario.cs",
+              "RelativeToolTip": "Catedra\\Data\\Usuario.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAkwAkAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T16:37:07.863Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\nelso\\OneDrive\\Escritorio\\Universidad Don Bosco\\DSP\\Fase 1\\Catedra\\Catedra\\appsettings.json",
+              "RelativeDocumentMoniker": "Catedra\\appsettings.json",
+              "ToolTip": "C:\\Users\\nelso\\OneDrive\\Escritorio\\Universidad Don Bosco\\DSP\\Fase 1\\Catedra\\Catedra\\appsettings.json",
+              "RelativeToolTip": "Catedra\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-20T01:32:48.899Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

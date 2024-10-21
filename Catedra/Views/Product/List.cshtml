@@ -1,0 +1,80 @@
+﻿@model List<ProductModelo>
+
+@{
+    ViewData["Title"] = "Gestión de Recursos";   
+}
+<style>
+    .pagination {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+</style>
+<h1 class="mt-4 mb-3">Administración General: </h1>
+
+<div class="card">
+ 
+    <div class="card-body">       
+        <a asp-action="SaveData" asp-controller="Product" class="btn btn-outline-success">Agregar Recurso</a>
+        <hr />
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col" class="text-center">ID</th>
+                    <th scope="col" class="text-center">Título</th>
+                    <th scope="col" class="text-center">Fecha de publicación</th>
+                    <th scope="col" class="text-center">Editorial</th>
+                    <th scope="col" class="text-center">Edición</th>
+                    <th scope="col" class="text-center">País</th>
+                    <th scope="col" class="text-center">Cantidad</th>
+                    <th scope="col" class="text-center">Precio</th>
+                    <th scope="col" class="text-center">Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td scope="row" class="text-center">@item.IdRecurso</td>
+                        <td scope="row" class="text-center">@item.Title</td>
+                        <td scope="row" class="text-center">@item.AnnioProduction</td>
+                        <td scope="row" class="text-center">@item.IdEditorial</td>
+                        <td scope="row" class="text-center">@item.Edition</td>
+                        <td scope="row" class="text-center">@item.IdCountry</td>
+                        <td scope="row" class="text-center">@item.Cantidad</td>
+                        <td scope="row" class="text-center">@item.Precio</td>
+
+                        <td scope="row" class="text-center">
+                            <a asp-action="UpdateData" asp-controller="Product" class="btn btn-outline-info" asp-route-IdProduct="@item.IdRecurso"><box-icon name='pencil'></box-icon></a>
+                            <a asp-action="Delete" asp-controller="Product" class="btn btn-outline-danger" asp-route-IdProduct="@item.IdRecurso"><box-icon name='trash'></box-icon></a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="container">
+    <div class="pagination">
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>

@@ -1,0 +1,83 @@
+﻿@model Catedra.Models.ProductModelo
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<style>
+    .contenido {
+        width: 700px;        
+    }
+
+    .centering-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+
+<h1>Agregar Recursos</h1>
+
+<hr />
+
+<div class="card">
+    <div class="card-header">
+        Gestión de Recursos
+    </div>
+
+    <div class="centering-content" style="background: #F0F0F0;">
+        <div class="contenido">
+            <form asp-action="SaveData">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group m-3">
+                    <label for="exampleFormControlInput1" class="form-label">Título</label>
+                    <input asp-for="Title" class="form-control" />
+                    <span asp-validation-for="Title" class="text-danger"></span>
+                </div>
+                <div class="form-group m-3">
+                    <label for="exampleFormControlInput1" class="form-label">Año de produción</label>
+                    <input asp-for="AnnioProduction" class="form-control" />
+                    <span asp-validation-for="AnnioProduction" class="text-danger"></span>
+                </div>
+                <div class="form-group m-3">
+                    <label for="exampleFormControlInput1" class="form-label">Editorial</label>
+                    <input asp-for="IdEditorial" class="form-control" />
+                    <span asp-validation-for="IdEditorial" class="text-danger"></span>
+                </div>
+                <div class="form-group m-3">
+                    <label for="exampleFormControlInput1" class="form-label">Edición</label>
+                    <input asp-for="Edition" class="form-control" />
+                    <span asp-validation-for="Edition" class="text-danger"></span>
+                </div>
+                <div class="form-group m-3">
+                    <label for="exampleFormControlInput1" class="form-label">País</label>
+                    <input asp-for="IdCountry" class="form-control" />
+                    <span asp-validation-for="IdCountry" class="text-danger"></span>
+                </div>
+                <div class="form-group m-3">
+                    <label for="exampleFormControlInput1" class="form-label">Cantidad</label>
+                    <input asp-for="Cantidad" class="form-control" />
+                    <span asp-validation-for="Cantidad" class="text-danger"></span>
+                </div>
+                <div class="form-group m-3">
+                    <label for="exampleFormControlInput1" class="form-label">Precio</label>
+                    <input asp-for="Price" class="form-control" />
+                    <span asp-validation-for="Price" class="text-danger"></span>
+                </div>
+                <div class="form-group m-3">
+                    <label for="exampleFormControlInput1" class="form-label">Palabra de busqueda</label>
+                    <input asp-for="Busqueda" class="form-control" />
+                    <span asp-validation-for="Busqueda" class="text-danger"></span>
+                </div>
+                <div class="form-group mt-3 mb-3 text-center">
+                    <input type="submit" value="Create" class="btn btn-outline-success" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="text-center">
+    <a asp-action="List" class="btn btn-outline-info mt-3 mb-3">Back to List</a>
+</div>
+
