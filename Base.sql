@@ -1,6 +1,6 @@
 USE [master]
 GO
-/****** Object:  Database [Bibliotecas]    Script Date: 10/20/2024 9:40:18 AM ******/
+/****** Object:  Database [Bibliotecas]    Script Date: 10/22/2024 10:18:39 PM ******/
 CREATE DATABASE [Bibliotecas]
  CONTAINMENT = NONE
  ON  PRIMARY 
@@ -84,7 +84,7 @@ ALTER DATABASE [Bibliotecas] SET QUERY_STORE (OPERATION_MODE = READ_WRITE, CLEAN
 GO
 USE [Bibliotecas]
 GO
-/****** Object:  Table [dbo].[Autor]    Script Date: 10/20/2024 9:40:18 AM ******/
+/****** Object:  Table [dbo].[Autor]    Script Date: 10/22/2024 10:18:40 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -99,7 +99,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[AutoresRecursos]    Script Date: 10/20/2024 9:40:18 AM ******/
+/****** Object:  Table [dbo].[AutoresRecursos]    Script Date: 10/22/2024 10:18:40 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -115,7 +115,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Editorial]    Script Date: 10/20/2024 9:40:18 AM ******/
+/****** Object:  Table [dbo].[Editorial]    Script Date: 10/22/2024 10:18:40 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -129,7 +129,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Pais]    Script Date: 10/20/2024 9:40:18 AM ******/
+/****** Object:  Table [dbo].[Pais]    Script Date: 10/22/2024 10:18:40 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -143,7 +143,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Recurso]    Script Date: 10/20/2024 9:40:18 AM ******/
+/****** Object:  Table [dbo].[Recurso]    Script Date: 10/22/2024 10:18:40 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -165,7 +165,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Usuarios]    Script Date: 10/20/2024 9:40:18 AM ******/
+/****** Object:  Table [dbo].[Usuarios]    Script Date: 10/22/2024 10:18:40 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -206,7 +206,7 @@ REFERENCES [dbo].[Pais] ([IdPais])
 GO
 ALTER TABLE [dbo].[Recurso] CHECK CONSTRAINT [FK_Pais]
 GO
-/****** Object:  StoredProcedure [dbo].[DeleteRecurso]    Script Date: 10/20/2024 9:40:18 AM ******/
+/****** Object:  StoredProcedure [dbo].[DeleteRecurso]    Script Date: 10/22/2024 10:18:40 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -221,7 +221,7 @@ BEGIN
     WHERE IdRec = @IdRec;
 END
 GO
-/****** Object:  StoredProcedure [dbo].[GetAllUsers]    Script Date: 10/20/2024 9:40:18 AM ******/
+/****** Object:  StoredProcedure [dbo].[GetAllUsers]    Script Date: 10/22/2024 10:18:40 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -241,7 +241,7 @@ BEGIN
         Usuarios;
 END;
 GO
-/****** Object:  StoredProcedure [dbo].[GetRecursos]    Script Date: 10/20/2024 9:40:18 AM ******/
+/****** Object:  StoredProcedure [dbo].[GetRecursos]    Script Date: 10/22/2024 10:18:40 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -268,7 +268,7 @@ BEGIN
 	INNER JOIN [dbo].[Editorial] E ON R.IdEdit = E.IdEdit;
 END
 GO
-/****** Object:  StoredProcedure [dbo].[GetRecursosByID]    Script Date: 10/20/2024 9:40:18 AM ******/
+/****** Object:  StoredProcedure [dbo].[GetRecursosByID]    Script Date: 10/22/2024 10:18:40 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -297,7 +297,7 @@ BEGIN
 	WHERE IdRec = @Id;
 END
 GO
-/****** Object:  StoredProcedure [dbo].[GetTitlesAndPrices]    Script Date: 10/20/2024 9:40:18 AM ******/
+/****** Object:  StoredProcedure [dbo].[GetTitlesAndPrices]    Script Date: 10/22/2024 10:18:40 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -315,7 +315,7 @@ BEGIN
         precio IS NOT NULL;      -- Ensuring that only records with a price are returned
 END;
 GO
-/****** Object:  StoredProcedure [dbo].[GetUnitsByDate]    Script Date: 10/20/2024 9:40:18 AM ******/
+/****** Object:  StoredProcedure [dbo].[GetUnitsByDate]    Script Date: 10/22/2024 10:18:40 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -335,7 +335,7 @@ BEGIN
         Data_Added;
 END;
 GO
-/****** Object:  StoredProcedure [dbo].[InsertRecurso]    Script Date: 10/20/2024 9:40:18 AM ******/
+/****** Object:  StoredProcedure [dbo].[InsertRecurso]    Script Date: 10/22/2024 10:18:40 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -353,11 +353,44 @@ AS
 	BEGIN
 		SET NOCOUNT ON;
 
-		INSERT INTO dbo.Recurso (titulo, annopulibc, IdEdit, edicion, IdPais, unidades, precio, palabrasbusqueda)
-		VALUES (@titulo, @annopulibc, @IdEdit, @edicion, @IdPais, @unidades, @precio, @palabra);
+		INSERT INTO dbo.Recurso (titulo, annopulibc, IdEdit, edicion, IdPais, unidades, precio, palabrasbusqueda, Data_Added)
+		VALUES (@titulo, @annopulibc, @IdEdit, @edicion, @IdPais, @unidades, @precio, @palabra, CURRENT_TIMESTAMP);
 	END
 GO
-/****** Object:  StoredProcedure [dbo].[SearchProduct]    Script Date: 10/20/2024 9:40:18 AM ******/
+/****** Object:  StoredProcedure [dbo].[LogInUser]    Script Date: 10/22/2024 10:18:40 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[LogInUser]
+    @Usuario VARCHAR(20),
+    @Password_Usuario VARCHAR(150)
+AS
+BEGIN
+    -- Check if the username and password match
+    IF EXISTS (
+        SELECT 1 
+        FROM Usuarios
+        WHERE Usuario = @Usuario AND Password_Usuario = @Password_Usuario
+    )
+    BEGIN
+        -- If a match is found, return the user data
+        SELECT 
+            ID_Usuario AS ID,
+            Usuario AS Usuario
+        FROM 
+            Usuarios
+        WHERE 
+            Usuario = @Usuario AND Password_Usuario = @Password_Usuario;
+    END
+    ELSE
+    BEGIN
+        -- If no match is found, return an error message
+        RAISERROR('Invalid username or password.', 16, 1);
+    END
+END;
+GO
+/****** Object:  StoredProcedure [dbo].[SearchProduct]    Script Date: 10/22/2024 10:18:40 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -400,7 +433,40 @@ BEGIN
 		OR nombres LIKE '%' + @Busqueda + '%';
 END
 GO
-/****** Object:  StoredProcedure [dbo].[UpdateRecurso]    Script Date: 10/20/2024 9:40:18 AM ******/
+/****** Object:  StoredProcedure [dbo].[sp_CreateUsuario]    Script Date: 10/22/2024 10:18:40 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[sp_CreateUsuario]
+    @Nombre_Usuario VARCHAR(45),
+    @Apellido_Usuario VARCHAR(65),
+    @Correo_Usuario VARCHAR(120),
+    @Telefono_Usuario VARCHAR(12),
+    @Usuario VARCHAR(20),
+    @Password_Usuario VARCHAR(150)
+AS
+BEGIN
+    INSERT INTO [dbo].[Usuarios] (Nombre_Usuario, Apellido_Usuario, Correo_Usuario, Telefono_Usuario, Usuario, Password_Usuario)
+    VALUES (@Nombre_Usuario, @Apellido_Usuario, @Correo_Usuario, @Telefono_Usuario, @Usuario, @Password_Usuario);
+    
+    -- Return the ID of the newly created user
+    SELECT SCOPE_IDENTITY() AS NewUserID;
+END
+GO
+/****** Object:  StoredProcedure [dbo].[sp_DeleteUsuario]    Script Date: 10/22/2024 10:18:40 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[sp_DeleteUsuario]
+    @ID_Usuario INT
+AS
+BEGIN
+    DELETE FROM [dbo].[Usuarios] WHERE ID_Usuario = @ID_Usuario;
+END
+GO
+/****** Object:  StoredProcedure [dbo].[UpdateRecurso]    Script Date: 10/22/2024 10:18:40 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
